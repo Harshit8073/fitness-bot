@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aura | AI Fitness Coach</title>
+    <meta name="description" content="Your personal AI fitness coach powered by Google Gemini. Get custom workout routines, diet plans, and health advice.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="app-container">
+        <!-- Background elements for visual flair -->
+        <div class="bg-shape shape-1"></div>
+        <div class="bg-shape shape-2"></div>
+        
+        <main class="chat-wrapper glass-panel">
+            <header class="chat-header">
+                <div class="header-info">
+                    <div class="bot-avatar">
+                        <i class="fa-solid fa-dumbbell"></i>
+                    </div>
+                    <div>
+                        <h1>Aura</h1>
+                        <p class="status"><span class="status-dot"></span> AI Fitness Coach</p>
+                    </div>
+                </div>
+            </header>
+
+            <div class="chat-container" id="chat-container">
+                <div class="message bot-message">
+                    <div class="message-content">
+                        <p>Hi there! 👋 I'm Aura, your personal AI Fitness Coach powered by Google Gemini. Whether you're looking to build muscle, lose weight, or just stay healthy, I'm here to help. What are your fitness goals?</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="input-area">
+                <form id="chat-form">
+                    <input type="text" id="user-input" placeholder="Ask about workouts, diet, or wellness..." autocomplete="off" required>
+                    <button type="submit" id="send-btn">
+                        <i class="fa-solid fa-paper-plane"></i>
+                    </button>
+                </form>
+            </div>
+        </main>
+    </div>
+    
+    <!-- Include marked.js for markdown parsing -->
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
